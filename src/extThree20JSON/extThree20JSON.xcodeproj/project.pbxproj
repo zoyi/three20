@@ -85,10 +85,46 @@
 		6E6462131187DD3300F08CB1 /* extThree20JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6462111187DD2A00F08CB1 /* extThree20JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EB460DA1183D8CB00685649 /* libextThree20JSON+SBJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF31F3A0F352DF5000DE5D2 /* libextThree20JSON+SBJSON.a */; };
 		9C012A231601C1F6003F5C1A /* extThree20JSON+JSONKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9C012A221601C1F6003F5C1A /* extThree20JSON+JSONKit_Prefix.pch */; };
-		9C012A2B1601C351003F5C1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C012A2A1601C351003F5C1A /* Foundation.framework */; };
-		9C012A301601C351003F5C1A /* extThree20JSON_JSONKIT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9C012A2F1601C351003F5C1A /* extThree20JSON_JSONKIT.h */; };
-		9C012A321601C351003F5C1A /* extThree20JSON_JSONKIT.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C012A311601C351003F5C1A /* extThree20JSON_JSONKIT.m */; };
-		9C012A391601C3BF003F5C1A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C012A381601C3BF003F5C1A /* JSONKit.m */; };
+		9C012B8016021E3A003F5C1A /* TTURLJSONResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E645A1A11876C9800F08CB1 /* TTURLJSONResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8116021E3A003F5C1A /* NSObject+YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E645AFD1187744C00F08CB1 /* NSObject+YAJL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8216021E3A003F5C1A /* YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E645B7C1187744D00F08CB1 /* YAJL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8316021E3A003F5C1A /* YAJLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E645B7D1187744D00F08CB1 /* YAJLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8416021E3A003F5C1A /* YAJLGen.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E645B7F1187744D00F08CB1 /* YAJLGen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8516021E3A003F5C1A /* YAJLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E645B811187744D00F08CB1 /* YAJLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8616021E3A003F5C1A /* extThree20JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6462111187DD2A00F08CB1 /* extThree20JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8716021E3A003F5C1A /* TTErrorCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 664B29E812848B1A0008D569 /* TTErrorCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8816021E3A003F5C1A /* yajl_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B5A12938CE3007134B0 /* yajl_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8916021E3A003F5C1A /* yajl_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B5B12938CE3007134B0 /* yajl_gen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8A16021E3A003F5C1A /* yajl_parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B5C12938CE3007134B0 /* yajl_parse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B8B16021E3A003F5C1A /* yajl_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B6312938CE3007134B0 /* yajl_alloc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C012B8C16021E3A003F5C1A /* yajl_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B6512938CE3007134B0 /* yajl_buf.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C012B8D16021E3A003F5C1A /* yajl_bytestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B6612938CE3007134B0 /* yajl_bytestack.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C012B8E16021E3A003F5C1A /* yajl_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B6812938CE3007134B0 /* yajl_encode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C012B8F16021E3A003F5C1A /* yajl_lex.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B6B12938CE3007134B0 /* yajl_lex.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C012B9016021E3A003F5C1A /* yajl_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71B6D12938CE3007134B0 /* yajl_parser.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C012B9116021E3A003F5C1A /* yajl_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E71BA512938CF8007134B0 /* yajl_version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B9216021E3A003F5C1A /* TTExtensionLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6609982012939800007B1E07 /* TTExtensionLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B9316021E3A003F5C1A /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6609986D12939B06007B1E07 /* GTMBase64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C012B9416021E3A003F5C1A /* NSBundle+YAJL.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A16603134266380052CA46 /* NSBundle+YAJL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C012B9516021E3A003F5C1A /* GHNSBundle+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A1663313427CD10052CA46 /* GHNSBundle+Utils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C012B9816021E3A003F5C1A /* TTURLJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E645A1C11876C9800F08CB1 /* TTURLJSONResponse.m */; };
+		9C012B9916021E3A003F5C1A /* NSObject+YAJL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E645AFE1187744C00F08CB1 /* NSObject+YAJL.m */; };
+		9C012B9A16021E3A003F5C1A /* YAJLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E645B7E1187744D00F08CB1 /* YAJLDocument.m */; };
+		9C012B9B16021E3A003F5C1A /* YAJLGen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E645B801187744D00F08CB1 /* YAJLGen.m */; };
+		9C012B9C16021E3A003F5C1A /* YAJLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E645B821187744D00F08CB1 /* YAJLParser.m */; };
+		9C012B9D16021E3A003F5C1A /* TTErrorCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B29EF12848B270008D569 /* TTErrorCodes.m */; };
+		9C012B9E16021E3A003F5C1A /* yajl.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E71B6012938CE3007134B0 /* yajl.c */; };
+		9C012B9F16021E3A003F5C1A /* yajl_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E71B6212938CE3007134B0 /* yajl_alloc.c */; };
+		9C012BA016021E3A003F5C1A /* yajl_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E71B6412938CE3007134B0 /* yajl_buf.c */; };
+		9C012BA116021E3A003F5C1A /* yajl_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E71B6712938CE3007134B0 /* yajl_encode.c */; };
+		9C012BA216021E3A003F5C1A /* yajl_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E71B6912938CE3007134B0 /* yajl_gen.c */; };
+		9C012BA316021E3A003F5C1A /* yajl_lex.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E71B6A12938CE3007134B0 /* yajl_lex.c */; };
+		9C012BA416021E3A003F5C1A /* yajl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E71B6C12938CE3007134B0 /* yajl_parser.c */; };
+		9C012BA516021E3A003F5C1A /* yajl_version.c in Sources */ = {isa = PBXBuildFile; fileRef = 66E71B6E12938CE3007134B0 /* yajl_version.c */; };
+		9C012BA616021E3A003F5C1A /* TTExtensionLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 66099817129397F5007B1E07 /* TTExtensionLoader.m */; };
+		9C012BA716021E3A003F5C1A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6609986E12939B06007B1E07 /* GTMBase64.m */; };
+		9C012BA816021E3A003F5C1A /* NSBundle+YAJL.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A16604134266380052CA46 /* NSBundle+YAJL.m */; };
+		9C012BA916021E3A003F5C1A /* GHNSBundle+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A1663413427CD10052CA46 /* GHNSBundle+Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,20 +205,21 @@
 			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = extThree20JSON;
 		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		9C012A261601C351003F5C1A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				9C012A301601C351003F5C1A /* extThree20JSON_JSONKIT.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		9C012B7C16021E3A003F5C1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E645A6A11876D3F00F08CB1 /* Three20Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20Core;
 		};
-/* End PBXCopyFilesBuildPhase section */
+		9C012B7E16021E3A003F5C1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E645A7311876D4600F08CB1 /* Three20Network.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20Network;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		66099817129397F5007B1E07 /* TTExtensionLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTExtensionLoader.m; path = Source/TTExtensionLoader.m; sourceTree = "<group>"; };
@@ -276,13 +313,13 @@
 		6EB460A61183D2AC00685649 /* UnitTests+SBJSON.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "UnitTests+SBJSON.xcconfig"; path = "Configurations/UnitTests+SBJSON.xcconfig"; sourceTree = "<group>"; };
 		9C012A211601C199003F5C1A /* Library+JSONKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Library+JSONKit.xcconfig"; sourceTree = "<group>"; };
 		9C012A221601C1F6003F5C1A /* extThree20JSON+JSONKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "extThree20JSON+JSONKit_Prefix.pch"; sourceTree = "<group>"; };
-		9C012A281601C351003F5C1A /* libextThree20JSON+JSONKIT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libextThree20JSON+JSONKIT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C012A2A1601C351003F5C1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C012A2E1601C351003F5C1A /* extThree20JSON+JSONKIT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "extThree20JSON+JSONKIT-Prefix.pch"; sourceTree = "<group>"; };
 		9C012A2F1601C351003F5C1A /* extThree20JSON_JSONKIT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extThree20JSON_JSONKIT.h; sourceTree = "<group>"; };
 		9C012A311601C351003F5C1A /* extThree20JSON_JSONKIT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = extThree20JSON_JSONKIT.m; sourceTree = "<group>"; };
 		9C012A371601C3BF003F5C1A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		9C012A381601C3BF003F5C1A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		9C012BAF16021E3A003F5C1A /* libextThree20JSON+JSONKIT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libextThree20JSON+JSONKIT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF31F3A0F352DF5000DE5D2 /* libextThree20JSON+SBJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libextThree20JSON+SBJSON.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9E6C6210B6A8F800DE563C /* extJSONUnitTests+SBJSON.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "extJSONUnitTests+SBJSON.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -295,11 +332,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C012A251601C351003F5C1A /* Frameworks */ = {
+		9C012BAA16021E3A003F5C1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C012A2B1601C351003F5C1A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +364,7 @@
 				BEF31F3A0F352DF5000DE5D2 /* libextThree20JSON+SBJSON.a */,
 				6E645BD91187751200F08CB1 /* libextThree20JSON+YAJL.a */,
 				EB9E6C6210B6A8F800DE563C /* extJSONUnitTests+SBJSON.octest */,
-				9C012A281601C351003F5C1A /* libextThree20JSON+JSONKIT.a */,
+				9C012BAF16021E3A003F5C1A /* libextThree20JSON+JSONKIT.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -617,6 +653,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C012B7F16021E3A003F5C1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C012B8016021E3A003F5C1A /* TTURLJSONResponse.h in Headers */,
+				9C012B8116021E3A003F5C1A /* NSObject+YAJL.h in Headers */,
+				9C012B8216021E3A003F5C1A /* YAJL.h in Headers */,
+				9C012B8316021E3A003F5C1A /* YAJLDocument.h in Headers */,
+				9C012B8416021E3A003F5C1A /* YAJLGen.h in Headers */,
+				9C012B8516021E3A003F5C1A /* YAJLParser.h in Headers */,
+				9C012B8616021E3A003F5C1A /* extThree20JSON.h in Headers */,
+				9C012B8716021E3A003F5C1A /* TTErrorCodes.h in Headers */,
+				9C012B8816021E3A003F5C1A /* yajl_common.h in Headers */,
+				9C012B8916021E3A003F5C1A /* yajl_gen.h in Headers */,
+				9C012B8A16021E3A003F5C1A /* yajl_parse.h in Headers */,
+				9C012B8B16021E3A003F5C1A /* yajl_alloc.h in Headers */,
+				9C012B8C16021E3A003F5C1A /* yajl_buf.h in Headers */,
+				9C012B8D16021E3A003F5C1A /* yajl_bytestack.h in Headers */,
+				9C012B8E16021E3A003F5C1A /* yajl_encode.h in Headers */,
+				9C012B8F16021E3A003F5C1A /* yajl_lex.h in Headers */,
+				9C012B9016021E3A003F5C1A /* yajl_parser.h in Headers */,
+				9C012B9116021E3A003F5C1A /* yajl_version.h in Headers */,
+				9C012B9216021E3A003F5C1A /* TTExtensionLoader.h in Headers */,
+				9C012B9316021E3A003F5C1A /* GTMBase64.h in Headers */,
+				9C012B9416021E3A003F5C1A /* NSBundle+YAJL.h in Headers */,
+				9C012B9516021E3A003F5C1A /* GHNSBundle+Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEF31F360F352DF5000DE5D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -666,21 +731,24 @@
 			productReference = 6E645BD91187751200F08CB1 /* libextThree20JSON+YAJL.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9C012A271601C351003F5C1A /* extThree20JSON+JSONKIT */ = {
+		9C012B7A16021E3A003F5C1A /* extThree20JSON+JSONKIT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C012A331601C351003F5C1A /* Build configuration list for PBXNativeTarget "extThree20JSON+JSONKIT" */;
+			buildConfigurationList = 9C012BAB16021E3A003F5C1A /* Build configuration list for PBXNativeTarget "extThree20JSON+JSONKIT" */;
 			buildPhases = (
-				9C012A241601C351003F5C1A /* Sources */,
-				9C012A251601C351003F5C1A /* Frameworks */,
-				9C012A261601C351003F5C1A /* CopyFiles */,
+				9C012B7F16021E3A003F5C1A /* Headers */,
+				9C012B9616021E3A003F5C1A /* Protect Copied Headers */,
+				9C012B9716021E3A003F5C1A /* Sources */,
+				9C012BAA16021E3A003F5C1A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9C012B7B16021E3A003F5C1A /* PBXTargetDependency */,
+				9C012B7D16021E3A003F5C1A /* PBXTargetDependency */,
 			);
 			name = "extThree20JSON+JSONKIT";
-			productName = "extThree20JSON+JSONKIT";
-			productReference = 9C012A281601C351003F5C1A /* libextThree20JSON+JSONKIT.a */;
+			productName = Three20;
+			productReference = 9C012BAF16021E3A003F5C1A /* libextThree20JSON+JSONKIT.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		BEF31F390F352DF5000DE5D2 /* extThree20JSON+SBJSON */ = {
@@ -760,7 +828,7 @@
 				BEF31F390F352DF5000DE5D2 /* extThree20JSON+SBJSON */,
 				6E645BA31187751200F08CB1 /* extThree20JSON+YAJL */,
 				EB9E6C6110B6A8F800DE563C /* extThree20JSONUnitTests+SBJSON */,
-				9C012A271601C351003F5C1A /* extThree20JSON+JSONKIT */,
+				9C012B7A16021E3A003F5C1A /* extThree20JSON+JSONKIT */,
 			);
 		};
 /* End PBXProject section */
@@ -835,6 +903,20 @@
 			shellPath = "/bin/sh ../scripts/Protect.command";
 			shellScript = "";
 		};
+		9C012B9616021E3A003F5C1A /* Protect Copied Headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Protect Copied Headers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh ../scripts/Protect.command";
+			shellScript = "";
+		};
 		EB9E6C6010B6A8F800DE563C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -876,12 +958,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C012A241601C351003F5C1A /* Sources */ = {
+		9C012B9716021E3A003F5C1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C012A321601C351003F5C1A /* extThree20JSON_JSONKIT.m in Sources */,
-				9C012A391601C3BF003F5C1A /* JSONKit.m in Sources */,
+				9C012B9816021E3A003F5C1A /* TTURLJSONResponse.m in Sources */,
+				9C012B9916021E3A003F5C1A /* NSObject+YAJL.m in Sources */,
+				9C012B9A16021E3A003F5C1A /* YAJLDocument.m in Sources */,
+				9C012B9B16021E3A003F5C1A /* YAJLGen.m in Sources */,
+				9C012B9C16021E3A003F5C1A /* YAJLParser.m in Sources */,
+				9C012B9D16021E3A003F5C1A /* TTErrorCodes.m in Sources */,
+				9C012B9E16021E3A003F5C1A /* yajl.c in Sources */,
+				9C012B9F16021E3A003F5C1A /* yajl_alloc.c in Sources */,
+				9C012BA016021E3A003F5C1A /* yajl_buf.c in Sources */,
+				9C012BA116021E3A003F5C1A /* yajl_encode.c in Sources */,
+				9C012BA216021E3A003F5C1A /* yajl_gen.c in Sources */,
+				9C012BA316021E3A003F5C1A /* yajl_lex.c in Sources */,
+				9C012BA416021E3A003F5C1A /* yajl_parser.c in Sources */,
+				9C012BA516021E3A003F5C1A /* yajl_version.c in Sources */,
+				9C012BA616021E3A003F5C1A /* TTExtensionLoader.m in Sources */,
+				9C012BA716021E3A003F5C1A /* GTMBase64.m in Sources */,
+				9C012BA816021E3A003F5C1A /* NSBundle+YAJL.m in Sources */,
+				9C012BA916021E3A003F5C1A /* GHNSBundle+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -953,6 +1051,16 @@
 			isa = PBXTargetDependency;
 			target = BEF31F390F352DF5000DE5D2 /* extThree20JSON+SBJSON */;
 			targetProxy = 6EB460DD1183D8D400685649 /* PBXContainerItemProxy */;
+		};
+		9C012B7B16021E3A003F5C1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20Core;
+			targetProxy = 9C012B7C16021E3A003F5C1A /* PBXContainerItemProxy */;
+		};
+		9C012B7D16021E3A003F5C1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20Network;
+			targetProxy = 9C012B7E16021E3A003F5C1A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1045,76 +1153,50 @@
 			};
 			name = Internal;
 		};
-		9C012A341601C351003F5C1A /* Debug */ = {
+		9C012BAC16021E3A003F5C1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663DB06D12661EE900CF8CEA /* Library+YAJL.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/extThree20JSON_JSONKIT.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "extThree20JSON+JSONKIT/extThree20JSON+JSONKIT-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
+					DEBUG,
+					EXTJSON_JSONKIT,
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = "extThree20JSON+JSONKIT";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		9C012A351601C351003F5C1A /* Internal */ = {
+		9C012BAD16021E3A003F5C1A /* Internal */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663DB06D12661EE900CF8CEA /* Library+YAJL.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/extThree20JSON_JSONKIT.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "extThree20JSON+JSONKIT/extThree20JSON+JSONKIT-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					EXTJSON_JSONKIT,
+					DEBUG,
+				);
+				PRODUCT_NAME = "extThree20JSON+JSONKIT";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Internal;
 		};
-		9C012A361601C351003F5C1A /* Release */ = {
+		9C012BAE16021E3A003F5C1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663DB06D12661EE900CF8CEA /* Library+YAJL.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/extThree20JSON_JSONKIT.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "extThree20JSON+JSONKIT/extThree20JSON+JSONKIT-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = EXTJSON_JSONKIT;
+				PRODUCT_NAME = "extThree20JSON+JSONKIT";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -1212,14 +1294,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C012A331601C351003F5C1A /* Build configuration list for PBXNativeTarget "extThree20JSON+JSONKIT" */ = {
+		9C012BAB16021E3A003F5C1A /* Build configuration list for PBXNativeTarget "extThree20JSON+JSONKIT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C012A341601C351003F5C1A /* Debug */,
-				9C012A351601C351003F5C1A /* Internal */,
-				9C012A361601C351003F5C1A /* Release */,
+				9C012BAC16021E3A003F5C1A /* Debug */,
+				9C012BAD16021E3A003F5C1A /* Internal */,
+				9C012BAE16021E3A003F5C1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "extThree20JSON+SBJSON" */ = {
 			isa = XCConfigurationList;
