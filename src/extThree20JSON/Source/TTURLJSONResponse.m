@@ -23,6 +23,8 @@
 #import "extThree20JSON/NSString+SBJSON.h"
 #elif defined(EXTJSON_YAJL)
 #import "extThree20JSON/NSObject+YAJL.h"
+#elif defined(EXTJSON_JSONKit)
+#import "extThree20JSON/JSONKit.h"
 #endif
 
 // Core
@@ -81,6 +83,15 @@
                                 code:kTTExtJSONErrorCodeInvalidJSON
                             userInfo:[exception userInfo]];
     }
+#elif defined(EXTJSON_JSONKit)
+    @try {
+      _rootObject = [[[JSONDecoder decoder] objectWithData:data error:&err] retain];
+    }
+    @catch (NSException* exception) {
+      err = [NSError errorWithDomain:kTTExtJSONErrorDomain
+                                code:kTTExtJSONErrorCodeInvalidJSON
+                                    userInfo:[exception userInfo]];
+      }
 #endif
   }
 

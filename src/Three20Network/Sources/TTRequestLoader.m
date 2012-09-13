@@ -39,6 +39,7 @@
 - (void)connection:(NSURLConnection*)connection didReceiveResponse:(NSHTTPURLResponse*)response ;
 - (void)connection:(NSURLConnection*)connection didReceiveData:(NSData*)data ;
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection ;
+- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace;
 @end
 static const NSInteger kLoadMaxRetries = 2;
 
@@ -412,10 +413,19 @@ static const NSInteger kLoadMaxRetries = 2;
   TT_RELEASE_SAFELY(_connection);
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
+  return [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust];
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)connection:(NSURLConnection *)connection
 didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge{
+  if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust])
+    [challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
+  [challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
+  
   TTDCONDITIONLOG(TTDFLAG_URLREQUEST, @"  RECEIVED AUTH CHALLENGE LOADING %@ ", _urlPath);
   [_queue loader:self didReceiveAuthenticationChallenge:challenge];
 }

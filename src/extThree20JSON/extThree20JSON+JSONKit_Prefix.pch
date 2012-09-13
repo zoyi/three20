@@ -1,0 +1,12 @@
+//#import "../../common/Xcode324iOS41Fix.pch"
+//#ifdef __OBJC__
+//  #import <Foundation/Foundation.h>
+//#endif
+
+//
+// Prefix header for all source files of the 'extThree20JSON+JSONKit' target in the 'extThree20JSON' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif

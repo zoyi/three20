@@ -52,6 +52,9 @@
 #elif defined(EXTJSON_YAJL)
   extension.version = [extension.version stringByAppendingString:@" YAJL 1.0.11"];
   extension.copyright = [extension.copyright stringByAppendingString:@" 2009 Gabriel Handford. 2010 Lloyd Hilaiel."];
+#elif defined(EXTJSON_JSONKit)
+  extension.version = [extension.version stringByAppendingString:@" JSONKit"];
+  extension.copyright = [extension.copyright stringByAppendingString:@" 2012 John Engelhart"];
 #endif
 
   return [extension autorelease];
