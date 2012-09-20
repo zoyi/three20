@@ -231,6 +231,13 @@
 			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
+		9C65A5781609A40B002C3351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E6462811187DF2C00F08CB1 /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C012BAF16021E3A003F5C1A;
+			remoteInfo = "extThree20JSON+JSONKIT";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -532,6 +539,7 @@
 				6E6462881187DF2C00F08CB1 /* libextThree20JSON+SBJSON.a */,
 				6E64628A1187DF2C00F08CB1 /* libextThree20JSON+YAJL.a */,
 				6E64628C1187DF2C00F08CB1 /* extJSONUnitTests+SBJSON.octest */,
+				9C65A5791609A40B002C3351 /* libextThree20JSON+JSONKIT.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -772,6 +780,13 @@
 			fileType = wrapper.cfbundle;
 			path = Three20UnitTests.octest;
 			remoteRef = 6E7F981B118E385E00443B46 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C65A5791609A40B002C3351 /* libextThree20JSON+JSONKIT.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libextThree20JSON+JSONKIT.a";
+			remoteRef = 9C65A5781609A40B002C3351 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
