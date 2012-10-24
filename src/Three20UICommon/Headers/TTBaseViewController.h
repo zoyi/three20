@@ -91,6 +91,8 @@
  * Sent to the controller after the keyboard has slid out.
  */
 - (void)keyboardDidDisappear:(BOOL)animated withBounds:(CGRect)bounds;
-
-
+/**
+ * Sent to the controller after the keyboard has changed frame.
+ */
+- (void)keyboardWillChangeFrame:(BOOL)animated withBounds:(CGRect)bounds;
 @end

@@ -38,7 +38,7 @@
   BOOL _variableHeightRows;
   BOOL _showTableShadows;
   BOOL _clearsSelectionOnViewWillAppear;
-
+  BOOL _isShowingKeyboard;
   id<TTTableViewDataSource> _dataSource;
   id<UITableViewDelegate>   _tableDelegate;
 }
@@ -78,6 +78,7 @@
  * Indicates if the table should support non-fixed row heights.
  */
 @property (nonatomic) BOOL variableHeightRows;
+@property (nonatomic) BOOL isShowingKeyboard;
 
 /**
  * When enabled, draws gutter shadows above the first table item and below the last table item.

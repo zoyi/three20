@@ -63,6 +63,7 @@
 @synthesize showTableShadows    = _showTableShadows;
 @synthesize clearsSelectionOnViewWillAppear = _clearsSelectionOnViewWillAppear;
 @synthesize dataSource          = _dataSource;
+@synthesize isShowingKeyboard   = _isShowingKeyboard;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -348,7 +349,22 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)keyboardDidAppear:(BOOL)animated withBounds:(CGRect)bounds {
   [super keyboardDidAppear:animated withBounds:bounds];
+  if (_tableView) {
+    CGRect previousFrame = self.tableView.frame;
+    CGFloat height = bounds.size.height == 216 ? 252 : 216;
+    self.tableView.frame = TTRectContract(self.tableView.frame, 0, -height);
+
+    // There's any number of edge cases wherein a table view controller will get this callback but
+    // it shouldn't resize itself -- e.g. when a controller has the keyboard up, and then drills
+    // down into this controller. This is a sanity check to avoid situations where the table
+    // extends way off the bottom of the screen and becomes unusable.
+    if (self.tableView.height > self.view.bounds.size.height) {
+      self.tableView.frame = previousFrame;
+    }
+  }
+  self.isShowingKeyboard = YES;
   self.tableView.frame = TTRectContract(self.tableView.frame, 0, bounds.size.height);
+  NSLog(@"Table view frame %@  => %@", NSStringFromSelector(_cmd), NSStringFromCGRect(self.tableView.frame));
   [self.tableView scrollFirstResponderIntoView];
   [self layoutOverlayView];
   [self layoutBannerView];
@@ -358,7 +374,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)keyboardWillDisappear:(BOOL)animated withBounds:(CGRect)bounds {
   [super keyboardWillDisappear:animated withBounds:bounds];
-
+  self.isShowingKeyboard = NO;
   // If we do this when there is currently no table view, we can get into a weird loop where the
   // table view gets doubly-initialized. self.tableView will try to initialize it; this will call
   // self.view, which will call -loadView, which often calls self.tableView, which initializes it.

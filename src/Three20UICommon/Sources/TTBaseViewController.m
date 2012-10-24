@@ -287,6 +287,9 @@
   [[notification.userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] getValue:&frameStart];
 
   CGRect keyboardBounds = CGRectMake(0, 0, frameStart.size.width, frameStart.size.height);
+#elif __IPHONE_5_0
+  CGRect keyboardBounds;
+	[[notification.userInfo objectForKey:UIKeyboardBoundsUserInfoKey] getValue:&keyboardBounds];
 #else
   CGRect keyboardBounds;
   [[notification.userInfo objectForKey:UIKeyboardBoundsUserInfoKey] getValue:&keyboardBounds];
@@ -321,6 +324,17 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)keyboardWillChangeFrame:(NSNotification *)notification {
+#ifdef __IPHONE_5_0
+  NSDictionary *userInfo = [notification userInfo];
+  CGRect frameEnd;
+  [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] getValue:&frameEnd];
+  CGRect keyboardBounds = CGRectMake(0, 0, frameEnd.size.width, frameEnd.size.height);
+#endif
+  [self keyboardWillChangeFrame:YES withBounds:keyboardBounds];
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
 #pragma mark Public
@@ -348,7 +362,12 @@
                                                selector: @selector(keyboardDidHide:)
                                                    name: UIKeyboardDidHideNotification
                                                  object: nil];
-
+#ifdef __IPHONE_5_0
+      [[NSNotificationCenter defaultCenter] addObserver:self
+                                               selector:@selector(keyboardWillChangeFrame:)
+                                                   name:UIKeyboardWillChangeFrameNotification
+                                                 object:nil];
+#endif
     } else {
       [[NSNotificationCenter defaultCenter] removeObserver: self
                                                       name: UIKeyboardWillShowNotification
@@ -362,6 +381,11 @@
       [[NSNotificationCenter defaultCenter] removeObserver: self
                                                       name: UIKeyboardDidHideNotification
                                                     object: nil];
+#ifdef __IPHONE_5_0
+      [[NSNotificationCenter defaultCenter] removeObserver: self
+                                                      name:UIKeyboardWillChangeFrameNotification
+                                                    object:nil];
+#endif
     }
   }
 }
@@ -387,6 +411,12 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)keyboardDidDisappear:(BOOL)animated withBounds:(CGRect)bounds {
+  // Empty default implementation.
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)keyboardWillChangeFrame:(BOOL)animated withBounds:(CGRect)bounds {
   // Empty default implementation.
 }
 
