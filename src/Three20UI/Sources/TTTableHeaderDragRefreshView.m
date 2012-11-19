@@ -122,7 +122,8 @@
 
     UIImage* arrowImage = TTSTYLEVAR(tableRefreshHeaderArrowImage);
     _arrowImage = [[UIImageView alloc]
-                   initWithFrame:CGRectMake(25.0f, frame.size.height - 60.0f,
+                   initWithFrame:CGRectMake(25.0f,
+                                            frame.size.height - 60.0f + (60.f - arrowImage.size.height)/2.f,
                                             arrowImage.size.width, arrowImage.size.height)];
     _arrowImage.image             = arrowImage;
     [_arrowImage layer].transform = CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f);
