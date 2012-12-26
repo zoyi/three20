@@ -56,6 +56,16 @@
   return [super popViewControllerAnimatedWithTransition:transition];
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSUInteger)supportedInterfaceOrientations {
+  return UIInterfaceOrientationMaskPortrait;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+  return UIInterfaceOrientationPortrait;
+}
+
 
 @end
 
