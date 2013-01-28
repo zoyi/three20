@@ -106,6 +106,7 @@ static const CGFloat kMarginY = 6.0f;
   TT_RELEASE_SAFELY(_navigationBar);
   TT_RELEASE_SAFELY(_innerView);
   TT_RELEASE_SAFELY(_activityView);
+  TT_RELEASE_SAFELY(_screenView);
 
   [super dealloc];
 }
